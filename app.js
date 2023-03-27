@@ -37,7 +37,7 @@ app.use(function (err, req, res, next) {
 });
 
 app.listen(8000, () => {
-  console.log("listenign to 8000");
+  console.log("listening to 8000");
 });
 
 module.exports = app;
