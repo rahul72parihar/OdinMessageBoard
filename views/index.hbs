@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p>Welcome to {{title}}</p>
+
+<div class="list">
+  {{#each messages}}
+    <div>{{this.text}} - {{this.user}} - {{this.added}}</div>
+  {{/each}}
+</div>
+<form method="POST" action="/new">
+  <input type="text" name="text" placeholder="enter message" />
+  <input type="text" name="user" placeholder="enter user" />
+  <button type="submit">SUBMIT</button>
+</form>
